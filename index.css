@@ -13,6 +13,7 @@
   --color-6: #EDF7FA;
   --color-7: #142850;
   --color-8: #EDF7FA;
+  --color-9: #00A8CC;
 }
 
 html {
@@ -151,9 +152,12 @@ img {
   color: var(--color-4);
 }
 
+.recent-posts {
+  background-color: var(--color-8);
+}
+
 .recent-posts .container {
   height: 647px;
-  background-color: var(--color-8);
   padding: 0 11px;
 }
 
@@ -269,4 +273,127 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    padding: 0;
+    max-width: 856px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .header .container {
+    max-width: 100%;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .nav-links {
+    position: relative;
+    top: unset;
+    right: unset;
+    width: 100vw;
+    height: auto;
+    padding: 0 71px;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    transform: none;
+    transition: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .header .close-icon {
+    display: none;
+  }
+  .header a {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-5);
+  }
+  .hero .container {
+    flex-direction: row-reverse;
+    gap: unset;
+    padding-top: 71px;
+    padding-bottom: 71px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-picture {
+    width: 243px;
+    height: auto;
+  }
+  .hero .desc {
+    gap: 38px;
+  }
+  .hero h1 {
+    width: 445px;
+    height: 105px;
+    font-size: 44px;
+    line-height: 60px;
+    margin: unset;
+    text-align: left;
+  }
+  .hero p {
+    text-align: left;
+    width: 497px;
+    height: 66px;
+  }
+  .hero button {
+    margin: unset;
+  }
+  .recent-posts .container {
+    height: 396px;
+  }
+  .recent-posts a {
+    display: block;
+    color: var(--color-9);
+  }
+  .recent-posts h2,
+  .featured-works h2 {
+    font-size: 22px;
+  }
+  .recent-posts .section-header,
+  .featured-works .section-header {
+    justify-content: space-between;
+  }
+  .posts {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .post {
+    width: 418px;
+    height: 295px;
+    gap: 24px;
+  }
+  .post div {
+    font-size: 18px;
+  }
+  .recent-posts h3 {
+    font-size: 26px;
+  }
+  .featured-works {
+    padding-bottom: 83px;
+  }
+  .work {
+    flex-direction: row;
+  }
+  .featured-works h3 {
+    font-size: 30px;
+  }
+  .featured-works .year {
+    font-size: 18px;
+  }
+  .featured-works .text {
+    font-size: 20px;
+  }
+  .featured-works img {
+    width: 246px;
+    height: 180px;
+  }
 }/*# sourceMappingURL=index.css.map */
