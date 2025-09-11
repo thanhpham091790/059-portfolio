@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #21243D;
+    --color-2: #8695A4;
+    --color-3: #FF6464;
+    --color-4: #FFFFFF;
+    --color-5: #000000;
+    --color-6: #EDF7FA;
+    --color-7: #142850;
+    --color-8: #EDF7FA;
+}
+
+html {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-1);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-4);
+}
+
+.container {
+    padding: 0 17px;
+}
+
+// Header section
+
+.header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    padding: 0 17px;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    transform: translateX(100%);
+    transition: all ease 1s;
+}
+
+.header a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header .close-icon {
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+.menu-icon {
+    font-size: 35px;
+}
+
+// Hero section
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding-top: 33px;
+    padding-bottom: 58px;
+}
+
+.hero .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.profile-picture {
+    max-width: 47%;
+}
+
+.hero h1 {
+    width: 312px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--color-1);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero p {
+    text-align: center;
+}
+
+.hero button {
+    width: 208px;
+    height: 47px;
+    border-radius: 2px;
+    background-color: var(--color-3);
+    border: none;
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-4);
+}
+
+// Recent posts section
+
+.recent-posts .container {
+    height: 647px;
+    background-color: var(--color-8);
+    padding: 0 11px;
+}
+
+.recent-posts .section-header,
+.featured-works .section-header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-posts h2,
+.featured-works h2 {
+    font: inherit;
+    font-size: 18px;
+    line-height: 60px;
+    color: var(--color-1);
+}
+
+.recent-posts a {
+    display: none;
+}
+
+.posts,
+.works {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.post {
+    width: 354px;
+    height: 266px;
+    border-radius: 4px;
+    background-color: var(--color-4);
+    box-shadow: 0 4px 10px 0 rgba(187, 225, 250, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 19px;
+}
+
+.recent-posts h3 {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--color-1);
+}
+
+.recent-posts .date {
+    display: inline-block;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 1px solid var(--color-1);
+}
+
+// Featured works section
+
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--color-2);
+}
+
+.featured-works .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.featured-works h3 {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--color-1);
+}
+
+.featured-works .year {
+    display: inline-block;
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: var(--color-7);
+    font-weight: 900;
+    line-height: 60px;
+    color: var(--color-4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+}
+
+.featured-works .text {
+    color: var(--color-2);
+}
+
+// Footer section
+.footer {
+    height: 182px;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-links {
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
