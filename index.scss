@@ -545,4 +545,23 @@ img {
         width: 246px;
         height: 180px;
     }
+
+    // Work page
+    .work-page img {
+        width: 246px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .work-page h3 {
+        font-size: 30px;
+    }
+
+    .work-page .text {
+        font-size: 20px;
+    }
+
+    .work-page .year {
+        font-size: 18px;
+    }
 }
