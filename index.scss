@@ -100,7 +100,8 @@ img {
     text-transform: uppercase;
 }
 
-.header .nav-link:hover {
+.header .nav-link:hover,
+.header .active {
     color: var(--color-3);
 }
 
