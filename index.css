@@ -215,6 +215,10 @@ img {
   border-right: 1px solid var(--color-1);
 }
 
+.featured-works {
+  padding-bottom: 83px;
+}
+
 .work {
   display: flex;
   flex-direction: column;
@@ -284,10 +288,11 @@ img {
   .header {
     height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   .header .container {
-    max-width: 100%;
+    max-width: 1009px;
   }
   .header .menu-icon {
     display: none;
@@ -298,7 +303,9 @@ img {
     right: unset;
     width: 100vw;
     height: auto;
-    padding: 0 71px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1009px;
     background-color: var(--color-4);
     color: var(--color-1);
     transform: none;
@@ -376,9 +383,6 @@ img {
   }
   .recent-posts h3 {
     font-size: 26px;
-  }
-  .featured-works {
-    padding-bottom: 83px;
   }
   .work {
     flex-direction: row;
