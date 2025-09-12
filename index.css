@@ -361,6 +361,52 @@ img {
   color: var(--color-2);
 }
 
+.work-detail-page .main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.work-detail-page h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.work-detail-page .year-n-type {
+  display: flex;
+  gap: 15px;
+}
+
+.work-detail-page .year {
+  display: inline-flex;
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  background-color: var(--color-3);
+  color: var(--color-4);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-detail-page .type {
+  font-size: 18px;
+}
+
+.work-detail-page h2 {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.work-detail-page h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 1000px) {
   .blog-page .container {
     max-width: 681px;
