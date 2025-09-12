@@ -85,10 +85,11 @@ img {
     width: 75vw;
     height: 100vh;
     padding: 0 17px;
-    background-color: var(--color-1);
-    color: var(--color-4);
+    background-color: var(--color-4);
+    color: var(--color-1);
     transform: translateX(100%);
     transition: all ease 1s;
+    box-shadow: 1px 1px 1px 1px var(--color-1);
 }
 
 .header a {
@@ -97,6 +98,10 @@ img {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+}
+
+.header .nav-link:hover {
+    color: var(--color-3);
 }
 
 .header .close-icon {
@@ -278,6 +283,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 57px;
 }
 
 .social-links {
@@ -289,7 +295,8 @@ img {
 }
 
 // Blogs page
-.blog-page h1 {
+.blog-page h1,
+.work-page h1 {
     font-weight: 700;
     font-size: 30px;
     line-height: 60px;
@@ -297,7 +304,8 @@ img {
     margin: 24px 0;
 }
 
-.blogs {
+.blogs,
+.works {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -305,7 +313,8 @@ img {
     gap: 19px;
 }
 
-.blog {
+.blog,
+.work {
     border-bottom: 1px solid var(--color-1);
     padding-bottom: 25px;
     display: flex;
@@ -328,7 +337,64 @@ img {
     color: var(--color-2);
 }
 
+// Works page
+.work-page .container {
+    padding: 0 15.5px;
+}
+
+.work-page .content {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.work-page h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.work-page .year {
+    display: inline-flex;
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: var(--color-7);
+    font-weight: 900;
+    line-height: 60px;
+    color: var(--color-4);
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.work-page .text {
+    color: var(--color-2);
+}
+
+
+
 @media screen and (min-width: 1000px) {
+    .blog-page .container {
+        max-width: 681px;
+    }
+
+    .blog {
+        gap: 22px;
+    }
+
+    .blog h2 {
+        font-size: 30px;
+    }
+
+    .blog .date {
+        font-size: 20px;
+    }
+
+    .blog .text {
+        font-size: 20px;
+    }
+
     .container {
         padding: 0;
         max-width: 856px;
@@ -366,6 +432,7 @@ img {
         display: flex;
         justify-content: flex-end;
         gap: 30px;
+        box-shadow: none;
     }
 
     .header .close-icon {
